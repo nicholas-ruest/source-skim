@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "relay-notes",
+      "content": "The stream kept its assigned route after a worker failure. Cleanup errors were retained separately. A successful completion marker was never emitted after a partial failure."
+    },
+    {
+      "id": "research",
+      "content": "Token pruning reduces prefill work. Every retained span still needs source-addressable provenance. A deterministic full-context fallback protects quality."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "route-retention",
+      "source": "relay-notes",
+      "start_byte": 0,
+      "end_byte": 58,
+      "tokens": 10,
+      "score": 0.72,
+      "required": false
+    },
+    {
+      "id": "truthful-terminal",
+      "source": "relay-notes",
+      "start_byte": 100,
+      "end_byte": 173,
+      "tokens": 12,
+      "score": 0.95,
+      "required": true
+    },
+    {
+      "id": "provenance",
+      "source": "research",
+      "start_byte": 36,
+      "end_byte": 98,
+      "tokens": 10,
+      "score": 0.91,
+      "required": false
+    },
+    {
+      "id": "fallback",
+      "source": "research",
+      "start_byte": 99,
+      "end_byte": 154,
+      "tokens": 8,
+      "score": 0.66,
+      "required": false
+    }
+  ]
+}
+
